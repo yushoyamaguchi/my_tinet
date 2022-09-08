@@ -1,0 +1,72 @@
+nodes:
+- name: R1
+  image: frr:alpine-16aa9cfa01
+  docker_run_extra_args: --entrypoint bash
+  interfaces:
+  - { name: net0, type: direct, args: R2#net0 }
+- name: R2
+  image: slankdev/frr
+  interfaces:
+  - { name: net0, type: direct, args: R1#net0 }
+  - { name: net1, type: direct, args: R3#net0 }
+- name: R3
+  image: frr:alpine-16aa9cfa01
+  docker_run_extra_args: --entrypoint bash
+  interfaces:
+  - { name: net0, type: direct, args: R2#net1 }
+ 
+
+node_configs:
+- name: R1
+  cmds:
+  - cmd: ip addr add 10.0.1.1/24 dev net0
+  - cmd: sed -i -e 's/bgpd=no/bgpd=yes/g' /etc/frr/daemons
+  - cmd: /usr/lib/frr/frrinit.sh start
+  - cmd: >-
+      vtysh -c 'conf te'
+      -c 'router bgp 1'
+      -c 'no bgp ebgp-requires-policy'
+      -c ' bgp router-id 1.1.1.1'
+      -c ' neighbor 10.0.1.2 remote-as 2'
+      -c ' !'
+      -c ' address-family ipv4 unicast'
+      -c '  redistribute connected'
+      -c ' exit-address-family'
+      -c '!'
+
+- name: R2
+  cmds:
+  - cmd: ip addr add 10.0.1.2/24 dev net0
+  - cmd: ip addr add 10.0.2.1/24 dev net1
+  - cmd: /usr/lib/frr/frr start
+  - cmd: >-
+      vtysh -c 'conf te'
+      -c 'router bgp 2'
+      -c ' bgp router-id 2.2.2.2'
+      -c ' neighbor 10.0.1.1 remote-as 1'
+      -c ' neighbor 10.0.2.2 remote-as 3'
+      -c ' !'
+      -c ' address-family ipv4 unicast'
+      -c '  redistribute connected'
+      -c ' exit-address-family'
+      -c '!'
+
+
+- name: R3
+  cmds:
+  - cmd: ip addr add 10.0.2.2/24 dev net0
+  - cmd: sed -i -e 's/bgpd=no/bgpd=yes/g' /etc/frr/daemons
+  - cmd: /usr/lib/frr/frrinit.sh start
+  - cmd: >-
+      vtysh -c 'conf te'
+      -c 'router bgp 3'
+      -c 'no bgp ebgp-requires-policy'
+      -c ' bgp router-id 3.3.3.3'
+      -c ' neighbor 10.0.2.1 remote-as 2'
+      -c ' !'
+      -c ' address-family ipv4 unicast'
+      -c '  redistribute connected'
+      -c ' exit-address-family'
+      -c '!'
+
+

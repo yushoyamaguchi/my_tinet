@@ -1,0 +1,35 @@
+nodes:
+- name: R1
+  image: srx:latest
+  docker_run_extra_args: --entrypoint bash
+  interfaces:
+  - { name: net0, type: direct, args: R2#net0 }
+- name: R2
+  image: srx:latest
+  docker_run_extra_args: --entrypoint bash
+  interfaces:
+  - { name: net0, type: direct, args: R1#net0 }
+  - { name: net1, type: direct, args: R3#net0 }
+- name: R3
+  image: srx:latest
+  docker_run_extra_args: --entrypoint bash
+  interfaces:
+  - { name: net0, type: direct, args: R2#net1 }
+
+
+node_configs:
+- name: R1
+  cmds:
+  - cmd: ip addr add 10.0.1.1/24 dev net0
+
+
+- name: R2
+  cmds:
+  - cmd: ip addr add 10.0.1.2/24 dev net0
+  - cmd: ip addr add 10.0.2.1/24 dev net1
+
+
+
+- name: R3
+  cmds:
+  - cmd: ip addr add 10.0.2.2/24 dev net0

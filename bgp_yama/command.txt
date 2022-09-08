@@ -1,0 +1,15 @@
+tinet reconf -c spec.yaml | sudo sh -x
+
+sudo docker exec -it R1 /bin/bash
+
+sudo docker exec -it R2 tcpdump -i net0 -w a.pcap 
+
+sudo docker cp R2:/a.pcap ~/yusho/2022/yama_bgp.pcap
+
+
+log出力
+log file /tmp/frr.log
+log command
+debug bgp updates
+
+sudo docker exec -it R1 vtysh -c 'clear bgp *'

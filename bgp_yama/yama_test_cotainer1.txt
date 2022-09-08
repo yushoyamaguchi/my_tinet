@@ -1,0 +1,115 @@
+2022/06/14 09:58:25 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:25 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:25 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:30 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:30 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:30 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:35 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:35 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:35 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:36 BGP: [M7Q4P-46WDR] vty[??]@(config)# debug bgp updates
+2022/06/14 09:58:38 ZEBRA: [M7Q4P-46WDR] vty[??]@(config)# exit
+2022/06/14 09:58:38 BGP: [M7Q4P-46WDR] vty[??]@(config)# exit
+2022/06/14 09:58:38 STATIC: [M7Q4P-46WDR] vty[??]@(config)# exit
+2022/06/14 09:58:40 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:40 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:40 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:45 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:45 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:45 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:50 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:50 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:50 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:55 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:55 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:58:55 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:00 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:00 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:00 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:05 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:05 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:05 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:10 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:10 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:10 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:15 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:15 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:15 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:20 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:20 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:20 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:25 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:25 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:25 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:30 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:30 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:30 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:33 ZEBRA: [M7Q4P-46WDR] vty[??]@> enable
+2022/06/14 09:59:33 BGP: [M7Q4P-46WDR] vty[??]@> enable
+2022/06/14 09:59:33 STATIC: [M7Q4P-46WDR] vty[??]@> enable
+2022/06/14 09:59:33 BGP: [M7Q4P-46WDR] vty[??]@# clear bgp *
+2022/06/14 09:59:35 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:35 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:35 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:35 BGP: [HTQD2-0R1WR][EC 33554451] bgp_process_packet: BGP OPEN receipt failed for peer: 10.0.1.2
+2022/06/14 09:59:36 BGP: [K9G3A-CJ5QQ] u2:s2 announcing routes upon coalesce timer expiry(1100 ms)
+2022/06/14 09:59:36 BGP: [Z29RX-NDCX5] yama attr put to packet
+2022/06/14 09:59:36 BGP: [TN0HX-6G1RR] u2:s2 send UPDATE w/ attr: nexthop 0.0.0.0, origin ?, mp_nexthop ::, metric 0, path 
+2022/06/14 09:59:36 BGP: [HVRWP-5R9NQ] u2:s2 send UPDATE 10.0.1.0/24 IPv4 unicast
+2022/06/14 09:59:36 BGP: [WEV7K-2GAQ5] u2:s2 send UPDATE len 74 (max message len: 4096) numpfx 1
+2022/06/14 09:59:36 BGP: [MBFVT-8GSC6] u2:s2 10.0.1.2 send UPDATE w/ nexthop 10.0.1.1
+2022/06/14 09:59:36 BGP: [Z29RX-NDCX5] yama attr put to packet
+2022/06/14 09:59:36 BGP: [TN0HX-6G1RR] u2:s2 send UPDATE w/ attr: nexthop 0.0.0.0, origin ?, mp_nexthop ::, metric 0, path 
+2022/06/14 09:59:36 BGP: [HVRWP-5R9NQ] u2:s2 send UPDATE 10.10.1.0/24 IPv4 unicast
+2022/06/14 09:59:36 BGP: [WEV7K-2GAQ5] u2:s2 send UPDATE len 74 (max message len: 4096) numpfx 1
+2022/06/14 09:59:36 BGP: [MBFVT-8GSC6] u2:s2 10.0.1.2 send UPDATE w/ nexthop 10.0.1.1
+2022/06/14 09:59:36 BGP: [Z2KFR-ZGJC8] 10.0.1.2 rcvd UPDATE w/ attr: nexthop 10.0.1.2, origin ?, metric 0, path 2
+2022/06/14 09:59:36 BGP: [P9VY3-5B6NX] 10.0.1.2 rcvd UPDATE wlen 0 attrlen 28 alen 4
+2022/06/14 09:59:36 BGP: [W0R38-AAD36] 10.0.1.2 rcvd 10.0.1.0/24 IPv4 unicast
+2022/06/14 09:59:36 BGP: [Z2KFR-ZGJC8] 10.0.1.2 rcvd UPDATE w/ attr: nexthop 10.0.1.2, origin ?, metric 0, path 2
+2022/06/14 09:59:36 BGP: [P9VY3-5B6NX] 10.0.1.2 rcvd UPDATE wlen 0 attrlen 28 alen 4
+2022/06/14 09:59:36 BGP: [W0R38-AAD36] 10.0.1.2 rcvd 10.0.2.0/24 IPv4 unicast
+2022/06/14 09:59:36 BGP: [Z2KFR-ZGJC8] 10.0.1.2 rcvd UPDATE w/ attr: nexthop 10.0.1.2, origin ?, path 2 3
+2022/06/14 09:59:36 BGP: [P9VY3-5B6NX] 10.0.1.2 rcvd UPDATE wlen 0 attrlen 25 alen 4
+2022/06/14 09:59:36 BGP: [W0R38-AAD36] 10.0.1.2 rcvd 10.10.3.0/24 IPv4 unicast
+2022/06/14 09:59:36 BGP: [P9VY3-5B6NX] 10.0.1.2 rcvd UPDATE wlen 0 attrlen 0 alen 0
+2022/06/14 09:59:36 BGP: [G3V0W-FSWRC] bgp_best_path_select_defer: processing route for IPv4 Unicast : cnt 0
+2022/06/14 09:59:36 BGP: [M59KS-A3ZXZ] bgp_update_receive: rcvd End-of-RIB for IPv4 Unicast from 10.0.1.2 in vrf default
+2022/06/14 09:59:36 BGP: [Z2KFR-ZGJC8] 10.0.1.2 rcvd UPDATE w/ attr: nexthop 10.0.1.1, origin ?, path 2 1
+2022/06/14 09:59:36 BGP: [P9VY3-5B6NX] 10.0.1.2 rcvd UPDATE wlen 0 attrlen 25 alen 4
+2022/06/14 09:59:36 BGP: [G759B-M5T1Y] 10.0.1.2 rcvd UPDATE about 10.10.1.0/24 IPv4 unicast -- DENIED due to: as-path contains our own AS;
+2022/06/14 09:59:36 BGP: [K423X-ETGCQ] group_announce_route_walkcb: afi=IPv4, safi=unicast, p=10.0.2.0/24
+2022/06/14 09:59:36 BGP: [T5JFA-13199] subgroup_process_announce_selected: p=10.0.2.0/24, selected=0x7fbefbae4b10
+2022/06/14 09:59:36 BGP: [K423X-ETGCQ] group_announce_route_walkcb: afi=IPv4, safi=unicast, p=10.10.3.0/24
+2022/06/14 09:59:36 BGP: [T5JFA-13199] subgroup_process_announce_selected: p=10.10.3.0/24, selected=0x7fbefbae4d10
+2022/06/14 09:59:36 BGP: [Z29RX-NDCX5] yama attr put to packet
+2022/06/14 09:59:36 BGP: [TN0HX-6G1RR] u2:s2 send UPDATE w/ attr: nexthop 0.0.0.0, origin ?, path 2
+2022/06/14 09:59:36 BGP: [HVRWP-5R9NQ] u2:s2 send UPDATE 10.0.2.0/24 IPv4 unicast
+2022/06/14 09:59:36 BGP: [WEV7K-2GAQ5] u2:s2 send UPDATE len 71 (max message len: 4096) numpfx 1
+2022/06/14 09:59:36 BGP: [MBFVT-8GSC6] u2:s2 10.0.1.2 send UPDATE w/ nexthop 10.0.1.1
+2022/06/14 09:59:36 BGP: [Z29RX-NDCX5] yama attr put to packet
+2022/06/14 09:59:36 BGP: [TN0HX-6G1RR] u2:s2 send UPDATE w/ attr: nexthop 0.0.0.0, origin ?, path 2 3
+2022/06/14 09:59:36 BGP: [HVRWP-5R9NQ] u2:s2 send UPDATE 10.10.3.0/24 IPv4 unicast
+2022/06/14 09:59:36 BGP: [WEV7K-2GAQ5] u2:s2 send UPDATE len 75 (max message len: 4096) numpfx 1
+2022/06/14 09:59:36 BGP: [MBFVT-8GSC6] u2:s2 10.0.1.2 send UPDATE w/ nexthop 10.0.1.1
+2022/06/14 09:59:40 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:40 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:40 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:45 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:45 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:45 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:50 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:50 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:50 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:51 ZEBRA: [M7Q4P-46WDR] vty[??]@# exit
+2022/06/14 09:59:51 BGP: [M7Q4P-46WDR] vty[??]@# exit
+2022/06/14 09:59:51 STATIC: [M7Q4P-46WDR] vty[??]@# exit
+2022/06/14 09:59:55 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:55 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 09:59:55 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 10:00:00 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 10:00:00 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 10:00:00 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 10:00:05 ZEBRA: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 10:00:05 STATIC: [M7Q4P-46WDR] vty[??]@> echo PING
+2022/06/14 10:00:05 BGP: [M7Q4P-46WDR] vty[??]@> echo PING
