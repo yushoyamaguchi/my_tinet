@@ -1,6 +1,6 @@
 tinet reconf -c spec.yaml | sudo sh -x
 
-sudo docker exec -it R1 /bin/bash
+sudo docker exec -it R1 vtysh
 
 sudo docker exec -it R2 tcpdump -i net0 -w a.pcap 
 
