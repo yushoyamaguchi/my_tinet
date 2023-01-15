@@ -73,6 +73,7 @@ node_configs:
           -c 'route-map LOCAL_PREF200 permit 10'
           -c ' match ip address 1'
           -c ' set local-preference 200'
+          #-c 'neighbor 10.2.0.2 route-map LOCAL_PREF200 in' #このコマンドをあとから打つ
           -c ' exit'
           -c '!'
   - name: R2
