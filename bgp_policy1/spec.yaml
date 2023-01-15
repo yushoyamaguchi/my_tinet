@@ -68,6 +68,7 @@ node_configs:
           -c "neighbor 10.2.0.2 remote-as 65004"
           -c ' address-family ipv4 unicast'
           -c '  redistribute connected'
+          -c '  neighbor 10.2.0.2 route-map LOCAL_PREF200 in'
           -c ' exit-address-family'
           -c 'access-list 1 permit 10.11.0.0/24'
           -c 'route-map LOCAL_PREF200 permit 10'
@@ -75,7 +76,6 @@ node_configs:
           -c ' set local-preference 200'
           -c ' exit'
           -c 'route-map LOCAL_PREF200 permit 20'
-          -c 'neighbor 10.2.0.2 route-map LOCAL_PREF200 in' #このコマンドはvtyshでもう一回打たないと適用されない
           -c '!'
   - name: R2
     cmds:
