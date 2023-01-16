@@ -75,6 +75,7 @@ node_configs:
           -c ' set local-preference 200'
           #-c 'neighbor 10.2.0.2 route-map LOCAL_PREF200 in' #このコマンドをあとから打つ
           -c ' exit'
+          #-c 'route-map LOCAL_PREF200 permit 20' #そのあとにこのコマンドも打つ(収束までしばらくかかる)
           -c '!'
   - name: R2
     cmds:
