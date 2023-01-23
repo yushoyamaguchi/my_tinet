@@ -1,0 +1,28 @@
+nodes:
+- name: R1
+  image: yamaguchi-frr:test1
+  interfaces:
+  - { name: net0, type: direct, args: R2#net0 }
+- name: R2
+  image: yamaguchi-frr:test1
+  interfaces:
+  - { name: net0, type: direct, args: R1#net0 }
+node_configs:
+  - name: R1
+    cmds:
+      - cmd: sysctl -w 'net.ipv6.conf.all.forwarding=1'
+      - cmd: sysctl -w 'net.ipv6.conf.all.disable_ipv6=0'
+      - cmd: sysctl -w 'net.ipv6.conf.default.forwarding=1'
+      - cmd: sysctl -w 'net.ipv6.conf.default.disable_ipv6=0'
+      - cmd: sysctl -w 'net.ipv6.conf.net0.autoconf=0'
+      - cmd: sysctl -w 'net.ipv6.conf.net0.accept_ra=0'
+      - cmd: ip -6 addr add 2001:12::1/64 dev net0
+  - name: R2
+    cmds:
+      - cmd: sysctl -w 'net.ipv6.conf.all.forwarding=1'
+      - cmd: sysctl -w 'net.ipv6.conf.all.disable_ipv6=0'
+      - cmd: sysctl -w 'net.ipv6.conf.default.forwarding=1'
+      - cmd: sysctl -w 'net.ipv6.conf.default.disable_ipv6=0'
+      - cmd: sysctl -w 'net.ipv6.conf.net0.autoconf=0'
+      - cmd: sysctl -w 'net.ipv6.conf.net0.accept_ra=0'
+      - cmd: ip -6 addr add 2001:12::2/64 dev net0
