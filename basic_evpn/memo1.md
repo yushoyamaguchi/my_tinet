@@ -1,6 +1,6 @@
 # RDとRT
 ## RT
-FRRの実装ではVNIと同じ値になってるそう
+FRRの実装ではVNIと同じ値になってるぽい
 
 ## RD
 ipアドレス風の32bit+番号32bit の64bit
